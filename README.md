@@ -16,15 +16,11 @@ Compton-Effekt/
 │
 ├── de/ # Deutsche Version
 │ ├── compton_de.tex # Hauptdatei (Deutsch)
-│ ├── compton_de.pdf # Kompiliertes PDF
 │ ├── figures/ # Abbildungen (deutsche Labels)
-│ └── ... (Hilfsdateien)
 │
 ├── en/ # Englische Übersetzung
 │ ├── compton_en.tex # Main file (English)
-│ ├── compton_en.pdf # Compiled PDF
 │ ├── figures/ # Figures (English captions)
-│ └── ... (auxiliary files)
 │
 ├── styles/
 │ ├── paper-style-de.sty # Stilvorlage für deutsche Version
