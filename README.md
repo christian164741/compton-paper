@@ -8,7 +8,7 @@ von **Christian Weilharter**
 ---
 
 ## 📂 Projektstruktur
-
+```
 Compton-Effekt/
 │
 ├── bib/
@@ -31,5 +31,5 @@ Compton-Effekt/
 │ └── paper-style-en.sty # Style file for English version
 │
 └── README.md
-
+```
 - 🌐 Website: [https://mathandphysics.de](https://mathandphysics.de)
