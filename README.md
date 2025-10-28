@@ -15,12 +15,14 @@ Compton-Effekt/
 │ └── literatur.bib # Gemeinsame Literaturdatenbank (BibLaTeX)
 │
 ├── de/ # Deutsche Version
-│ ├── compton_de.tex # Hauptdatei (Deutsch)
-│ ├── figures/ # Abbildungen (deutsche Labels)
+│ ├── main.tex # Hauptdatei (Deutsch)
+│ ├── captures/ # Kapitel
+│ ├── figures/ # Abbildungen 
 │
 ├── en/ # Englische Übersetzung
 │ ├── compton_en.tex # Main file (English)
-│ ├── figures/ # Figures (English captions)
+│ ├── captures/ # English captions
+│ ├── figures/ # Figures 
 │
 ├── styles/
 │ ├── paper-style-de.sty # Stilvorlage für deutsche Version
