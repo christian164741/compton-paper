@@ -47,6 +47,10 @@ Das einfallende Photon besitzt eine höhere Energie (und damit eine höhere Freq
 E = h \nu,
 \]
 verringert sich nach dem Stoß die Frequenz des gestreuten Photons – seine Wellenlänge wird entsprechend größer.
+\begin{DidaktikBox}[Energie vs. Frequenz]
+	Ein Photon verliert beim Stoß Energie \(\Delta E\); da \(E=h\nu\), sinkt seine Frequenz und die Wellenlänge wächst (\(\lambda' > \lambda\)). 
+	Das ist die zentrale Intuition hinter der späteren Verschiebung \(\Delta\lambda\).
+\end{DidaktikBox}
 
 \subsection{Die Energieerhaltung bei dem Stoß}
 \[
@@ -67,7 +71,7 @@ Zur Vereinfachung der Schreibweise wird definiert:\\
 
 
 
-\subsection{Für das masseslose Photon gilt: }
+\subsection{Für das masselose Photon gilt: }
 \begin{align*}
 	E_\gamma =\sqrt{m^2c^4+c^2p_\gamma^2}=cp_\gamma\quad \text{da m=0}
 \end{align*}
@@ -150,15 +154,26 @@ Dies ergibt dann zwei Gleichungen:\\
 	\Leftrightarrow \nonumber\\
 	p'_{ey}&=-p'_{\gamma y}\label{pe}
 \end{align}
-Ebenso gilt die Beziehung mit Phytagoras:\\
+
+
+
+Ebenso gilt die Beziehung mit Pythagoras:\\
 \begin{align}
 	{p'}^2_e=	{p'}^2_{ex}+	{p'}^2_{ey}\label{p}
 \end{align}
-Jetzt \ref{pex} und \ref{pe} in \ref{p} einsetzen und die ergibt dann die Gleichung:\\
+Jetzt (\ref{pex})  und (\ref{pe}) in (\ref{p}) einsetzen und die ergibt dann die Gleichung:\\
 \begin{align}
 	{p'}^2&=(p_\gamma-p'_{\gamma x})^2+(-p'_{\gamma y})^2 \nonumber\\
-	&=p_\gamma^2-2p_\gamma p'_{\gamma x}+p'^2_{\gamma x}+p'^2_{\gamma y}\label{pp}
+	&=p_\gamma^2-2p_\gamma p'_{\gamma x}+p'^2_{\gamma x}+p'^2_{\gamma y}\label{ppp}
 \end{align}
+
+\begin{MatheBox}[Komponenten der Impulserhaltung]
+	Aus \(\vec p_\gamma=\vec p'_\gamma+\vec p'_e\) folgen komponentenweise 
+	\(p_\gamma=p'_{\gamma x}+p'_{ex}\) und \(0=p'_{\gamma y}+p'_{ey}\).
+	Mit Pythagoras erhält man \(p_e'^2=p_{ex}'^{\,2}+p_{ey}'^{\,2}\).
+\end{MatheBox}
+
+
 Jetzt den Winkel $\theta$ mittels den $\cos(\theta)$ ausdrücken und einfügen. Es gilt ja:\\
 
 \begin{center}
@@ -193,39 +208,60 @@ Jetzt den Winkel $\theta$ mittels den $\cos(\theta)$ ausdrücken und einfügen. 
 \begin{align}
 	p'_{\gamma x} = p'_\gamma \cos (\theta) \label{winkel}
 \end{align}
-\ref{winkel} in \ref{pp} einsetzen und dies ergibt dann die zweite Gleichung die  in \ref{Energie} eingesetzt wird.\\
+\begin{HinweisBox}[Projektion richtig anwenden]
+	Nur die \emph{x}-Komponente ist \(p'_{\gamma x}=p'_\gamma\cos\theta\).
+	Der Term \(p'^2_{\gamma x}+p'^2_{\gamma y}=p'^2_\gamma\) — nicht \(p'^2_{\gamma y}\) — 
+	ist der Betragquadratsatz für den Photonenimpuls nach dem Stoß.
+\end{HinweisBox}
+
+
+(\ref{winkel} ) in (\ref{ppp}) einsetzen und dies ergibt dann die Gleichung  (\ref{pp}) .\\
 \begin{align}
 	{p'}_e^2=p_\gamma^2-2p_\gamma p'_\gamma \cos (\theta)+p'^2_{\gamma y}\label{pp}
 \end{align}
-Hier nochmals die zwei Gleichungen \ref{Energie} und \ref{pp}:\\
+Hier nochmals die zwei Gleichungen (\ref{pp}) und (\ref{Energie}):\\
 \begin{align*}
 	{p'}_e^2&=p_\gamma^2-2p_\gamma p'_\gamma \cos (\theta)+p'^2_{\gamma y}\\
 	cp_\gamma+m_ec^2&=cp'_\gamma+\sqrt{m_e^2c^4+c^2{p'_e}^2} 
 \end{align*}
 Die Gleichung \ref{pp} wird in \ref{Energie} eingesetzt.\\
-{\tiny
 \begin{align*}
-	cp_\gamma+m_ec^2&=cp'_\gamma+\sqrt{m_e^2c^4+c^2(p_\gamma^2-2p_\gamma p'_\gamma \cos (\theta)+{p'}^2_{\gamma y})} \\
-	cp_\gamma+m_ec^2-cp'_\gamma&=\sqrt{m^2_ec^4+c^2p^2_\gamma+c^2{p'}^2_{\gamma y}-2c^2p_\gamma p'_\gamma \cos(\theta)}\quad /\text{quatrieren}\\
-	(cp_\gamma+m_ec^2-cp'_\gamma)^2&=m^2_ec^4+c^2p^2_\gamma+c^2{p'}^2_{\gamma y}-2c^2p_\gamma p'_\gamma \cos(\theta)\\
-	c^2p^2_\gamma+m_e^2c^4+c^2{p'}^2_\gamma+2m_ec^3p_\gamma-2c^2p_\gamma{p'}_\gamma-2m_ec^3p'_\gamma&=m^2_ec^4+c^2p^2_\gamma+c^2{p'}^2_{\gamma y}-2c^2p_\gamma p'_\gamma \cos(\theta)\\
+		cp_\gamma+m_ec^2&=cp'_\gamma+\sqrt{m_e^2c^4+c^2(p_\gamma^2-2p_\gamma p'_\gamma \cos (\theta)+{p'}^2_{\gamma y})} \\
+	cp_\gamma+m_ec^2-cp'_\gamma&=\sqrt{m^2_ec^4+c^2p^2_\gamma+c^2{p'}^2_{\gamma y}-2c^2p_\gamma p'_\gamma \cos(\theta)}\
 \end{align*}
-}
-{\tiny
+Gleichung quadrieren:
 \begin{align*}
-	\cancel{\color{red}c^2 p^2_\gamma}
+		(cp_\gamma+m_ec^2-cp'_\gamma)^2&=m^2_ec^4+c^2p^2_\gamma+c^2{p'}^2_{\gamma y}-2c^2p_\gamma p'_\gamma \cos(\theta)\\
+\end{align*}
+\begin{DidaktikBox}[Quadratieren der Energiegleichung]
+	Das Wurzelzeichen entkoppeln wir durch Quadrieren beider Seiten. 
+	Wichtig: \emph{Ganze Gleichung} quadrieren und anschließend identische Terme 
+	auf beiden Seiten streichen.
+\end{DidaktikBox}
+
+
+Linke Seite ausmultiplizieren:
+\begin{align*}
+	c^2p^2_\gamma+m_e^2c^4+c^2{p'}^2_\gamma&+2m_ec^3p_\gamma-  2c^2p_\gamma{p'}_\gamma-2m_ec^3p'_\gamma=\\
+	&m^2_ec^4+c^2p^2_\gamma+c^2{p'}^2_{\gamma y}-2c^2p_\gamma p'_\gamma \cos(\theta)\\
+\end{align*}
+
+ Kürzen der gemeinsamen Termen:
+\[
+\begin{aligned}
+	\cancel{\color{red}c^2 p_\gamma^2}
 	+ \cancel{\color{blue}m_e^2 c^4}
-	+ \cancel{\color{teal}c^2 {p'}^2_\gamma}
+	+ \cancel{\color{teal}c^2 {p'}_\gamma^2}	\;&
 	+ \color{orange}2 m_e c^3 p_\gamma
 	- \color{purple}2 c^2 p_\gamma p'_\gamma
 	- \color{cyan}2 m_e c^3 p'_\gamma
-	&=
-	\cancel{\color{blue}m_e^2 c^4}
-	+ \cancel{\color{red}c^2 p^2_\gamma}
-	+ \cancel{\color{teal}c^2 {p'}^2_{\gamma y}}
-	- \color{purple}2 c^2 p_\gamma p'_\gamma \cos(\theta)
-\end{align*}
-}
+	=\\[0.2em]
+	\;&\cancel{\color{blue}m_e^2 c^4}
+	+ \cancel{\color{red}c^2 p_\gamma^2}
+	+ \cancel{\color{teal}c^2 {p'}_{\gamma y}^2}
+	- \color{purple}2 c^2 p_\gamma p'_\gamma \cos\theta
+\end{aligned}
+\]
 
 
 
@@ -281,7 +317,9 @@ p_\gamma = \frac{h}{\lambda}, \quad p'_\gamma = \frac{h}{\lambda'}
 \]
 
 Einsetzen in die Gleichung:
-
+\[
+p_\gamma - p'_\gamma = \frac{1}{m_e c} \cdot p_\gamma p'_\gamma (1 - \cos\theta)
+\]
 \[
 \frac{h}{\lambda} - \frac{h}{\lambda'} = \frac{1}{m_e c} \cdot \frac{h}{\lambda} \cdot \frac{h}{\lambda'} (1 - \cos\theta)
 \]
@@ -315,83 +353,16 @@ h (\lambda' - \lambda) = \frac{h^2}{m_e c} (1 - \cos\theta)
 \]
 
 
+\begin{HistoryBox}[Comptons Experiment (1923)]
+	A. H. Compton beobachtete bei Röntgenstrahlen eine winkelabhängige 
+	Wellenlängenvergrößerung. Die Formel 
+	\(\Delta\lambda=\tfrac{h}{m_ec}(1-\cos\theta)\) bestätigte den 
+	Teilchenimpuls von Lichtquanten und war ein Meilenstein für die Quantentheorie.
+\end{HistoryBox}
 
 
-\subsection{Folgerungen und Anwendungen der Compton-Formel}
-
-Die Compton-Formel lautet:
-\[
-\Delta \lambda = \lambda' - \lambda = \frac{h}{m_e c}(1 - \cos\theta)
-\]
-
-Der maximale Wert ergibt sich für \( \theta = 180^\circ \), da hier \( 1 - \cos(180^\circ) = 2 \). Damit:
-
-\[
-\Delta \lambda_\text{max} = 2 \cdot \frac{h}{m_e c}
-= 2 \cdot \frac{6{,}626 \cdot 10^{-34}~\text{Js}}{9{,}109 \cdot 10^{-31}~\text{kg} \cdot 3{,}0 \cdot 10^8~\text{m/s}}
-= 4{,}85 \cdot 10^{-12}~\text{m}
-\]
-
-Diese Wellenlängenverschiebung ist nun im Vergleich zu verschiedenen Photonen-Wellenlängen zu betrachten:
-
-\begin{center}
-	\begin{tabular}{|l|c|c|c|}
-		\hline
-		\textbf{Strahlungsart} & \(\lambda\) [m] & \(\Delta \lambda\) [m] & \(\frac{\Delta \lambda}{\lambda}\) \\
-		\hline
-		Rotes Licht & \(7{,}0 \cdot 10^{-7}\) & \(4{,}85 \cdot 10^{-12}\) & \(6{,}93 \cdot 10^{-6}\) \\
-		Röntgenstrahlung & \(1{,}0 \cdot 10^{-11}\) & \(4{,}85 \cdot 10^{-12}\) & \(0{,}485\) \\
-		Gammastrahlung & \(1{,}0 \cdot 10^{-13}\) & \(4{,}85 \cdot 10^{-12}\) & \(48{,}5\) \\
-		\hline
-	\end{tabular}
-\end{center}
-
-\subsection*{Fazit}
-
-Die Tabelle zeigt deutlich:
-
-\begin{itemize}
-	\item Bei sichtbarem Licht (z.\,B. rot, \( \lambda = 700\,\text{nm} \)) ist die relative Wellenlängenänderung durch den Compton-Effekt vernachlässigbar klein.
-	\item Im Röntgenbereich ist \(\Delta \lambda\) vergleichbar mit der ursprünglichen Wellenlänge – der Effekt ist hier klar messbar.
-	\item Für hochenergetische Gammastrahlung übersteigt \(\Delta \lambda\) sogar die ursprüngliche Wellenlänge um ein Vielfaches – der Compton-Effekt dominiert die Wechselwirkung mit Materie.
-\end{itemize}
-
-Dies erklärt auch, warum der Compton-Effekt ursprünglich bei der Untersuchung von Röntgenstrahlung entdeckt wurde – bei sichtbarem Licht wäre die Streuung durch Elektronen nicht nachweisbar.
-
-\textbf{Relative Compton-Verschiebung in Abhängigkeit von der Wellenlänge.}
-\begin{figure}[h]
-	\centering
-	\begin{tikzpicture}
-		\begin{axis}[
-			width=10cm,
-			height=8cm,
-			xlabel={Wellenlänge $\lambda$ [nm]},
-			ylabel={Relative Änderung $\Delta \lambda / \lambda$},
-			%title={Relative Compton-Verschiebung in Abhängigkeit von der Wellenlänge},
-			xmode=log,
-			ymode=log,
-			grid=both,
-			minor grid style={gray!20},
-			major grid style={gray!50},
-			domain=1e-13:1e-6,
-			samples=500,
-			xmin=1e-13, xmax=1e-6,
-			ymin=1e-4, ymax=1e2,
-			xtick={1e-13,1e-11,1e-9,1e-7},
-			xticklabels={$10^{-13}$, $10^{-11}$, $10^{-9}$, $10^{-7}$},
-			ytickten={-4,-2,0,2}
-			]
-			\addplot [
-			thick,
-			blue
-			]
-			expression {
-				4.849416e-12 / x
-			};
-		\end{axis}
-	\end{tikzpicture}
-	\caption{Relative Wellenlängenänderung $\Delta \lambda / \lambda$ gemäß der Compton-Formel für $\theta = 180^\circ$ in Abhängigkeit von der einfallenden Wellenlänge $\lambda$.}
-\end{figure}
-
-
-
+\begin{HypoBox}[Was wäre, wenn das Photon eine Masse hätte?]
+	Eine (hypothetische) Ruhemasse des Photons würde \(E^2=c^2p^2+m_\gamma^2c^4\) implizieren 
+	und die Compton-Verschiebung modifizieren. Präzisionsmessungen setzen extrem strenge 
+	Grenzen auf \(m_\gamma\approx 0\).
+\end{HypoBox}
