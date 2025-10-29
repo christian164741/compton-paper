@@ -1,3 +1,92 @@
-	\section{Physikalische Grundlagen}
-Photonenimpuls, Energie- und Impulserhaltung, Streugeometrie (Definition des Winkels $\theta$). 
-Kurze Herleitung von $p=\tfrac{h}{\lambda}$, Beziehung zu Energie $E=hc/\lambda$.
+
+% =============================================================
+\section{Physikalische Grundlagen}
+% =============================================================
+
+Der Compton-Effekt beschreibt die Streuung eines Photons an einem zunächst ruhenden Elektron. 
+Um die beobachtete Wellenlängenänderung zu verstehen, müssen sowohl die Energie 
+als auch der Impuls des Photons berücksichtigt werden.
+
+% -------------------------------------------------------------
+\subsection{Energie und Impuls des Photons}
+% -------------------------------------------------------------
+Ein Photon besitzt nach der Quantentheorie die Energie
+\[
+E = h\nu
+\]
+und den Impuls
+\[
+p = \frac{E}{c} = \frac{h\nu}{c} = \frac{h}{\lambda}.
+\]
+Obwohl Photonen keine Ruhemasse besitzen, tragen sie einen Impuls, 
+der bei Streuprozessen übertragen werden kann. 
+
+\begin{DidaktikBox}[Energie im Gegensatzt zur klassischen Wellenbeschreibung]
+	In der klassischen Wellentheorie wird Energie über die Amplitude transportiert, 
+	nicht über einzelne Quanten. 
+	Der Compton-Effekt zeigt, dass Licht in einzelnen Energiepaketen \( h\nu \) auftritt 
+	– ein klarer Hinweis auf den Teilchencharakter des Lichts.
+\end{DidaktikBox}
+
+% -------------------------------------------------------------
+\subsection{Stoß zwischen Photon und Elektron}
+% -------------------------------------------------------------
+Ein Photon trifft auf ein ruhendes Elektron (Masse \( m_e \)). 
+Nach der Streuung besitzt das Photon eine geringere Energie \( h\nu' \) 
+und wird unter dem Winkel \( \theta \) gestreut. 
+Das Elektron erhält einen Rückstoßimpuls \( \vec{p}_e \).
+
+\begin{PhysikBox}[Streugeometrie]
+	\small
+	Die Streugeometrie kann vektoriell beschrieben werden durch
+	\[
+	\vec{p}_\gamma = \vec{p}_{\gamma'} + \vec{p}_e.
+	\]
+	In Komponenten:
+	\[
+	p_\gamma = p_{\gamma'}\cos\theta + p_{e,x}, \qquad
+	0 = p_{\gamma'}\sin\theta - p_{e,y}.
+	\]
+\end{PhysikBox}
+
+\begin{HinweisBox}[Nichtelastischer Stoß]
+	Obwohl der Stoß Energie- und Impulserhaltung folgt, 
+	ist er \emph{nicht elastisch} im klassischen Sinn, 
+	da ein Teil der Photonenenergie in kinetische Energie des Elektrons übergeht.
+\end{HinweisBox}
+
+% -------------------------------------------------------------
+\subsection{Energie- und Impulserhaltung kombiniert}
+% -------------------------------------------------------------
+Nach der Energieerhaltung gilt:
+\[
+h\nu + m_e c^2 = h\nu' + \sqrt{(p_e c)^2 + (m_e c^2)^2}.
+\]
+Kombiniert man dies mit den Impulsbeziehungen, 
+erhält man nach einigen Umformungen die bekannte \emph{Compton-Formel}:
+\[
+\lambda' - \lambda = \frac{h}{m_e c}\,(1 - \cos\theta).
+\]
+
+\begin{MatheBox}[Die Compton-Wellenlänge]
+	Die Größe
+	\[
+	\lambda_C = \frac{h}{m_e c} \approx \SI{2.43e-12}{\meter}
+	\]
+	wird als \textbf{Compton-Wellenlänge} bezeichnet 
+	und charakterisiert die Skala, auf der der Effekt messbar ist.
+\end{MatheBox}
+
+% -------------------------------------------------------------
+\subsection{Physikalische Interpretation}
+% -------------------------------------------------------------
+Die Wellenlängenänderung hängt nur vom Streuwinkel \( \theta \) ab 
+und ist maximal bei Rückstreuung (\( \theta = 180^\circ \)). 
+Dies bestätigt, dass Photonen Energie und Impuls wie Teilchen übertragen, 
+obwohl sie sich gleichzeitig wellenartig ausbreiten.
+
+\begin{DidaktikBox}[Was der Compton-Effekt zeigt]
+	Der Compton-Effekt beweist, dass Licht nicht allein als Welle verstanden werden kann. 
+	Er verlangt eine Beschreibung durch \emph{Teilchen mit Energie und Impuls} – 
+	die Photonen. Damit wurde die klassische Elektrodynamik entscheidend erweitert.
+\end{DidaktikBox}

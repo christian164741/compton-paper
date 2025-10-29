@@ -1,2 +1,93 @@
-\section{Derivation of the Compton Formula}
-Energy and momentum conservation before and after the collision, elimination of the electron velocity, and conversion to wavelength form
+
+% =============================================================
+\section{Physical Foundations}
+% =============================================================
+
+The Compton effect describes the scattering of a photon by an initially stationary electron. 
+To understand the observed change in wavelength, both the energy 
+and the momentum of the photon must be taken into account.
+
+% -------------------------------------------------------------
+\subsection{Energy and Momentum of the Photon}
+% -------------------------------------------------------------
+According to quantum theory, a photon carries the energy
+\[
+E = h\nu
+\]
+and the momentum
+\[
+p = \frac{E}{c} = \frac{h\nu}{c} = \frac{h}{\lambda}.
+\]
+Although photons have no rest mass, they possess momentum 
+that can be transferred during scattering processes. 
+
+\begin{DidacticBox}[Energy in Contrast to the Classical Wave Description]
+	In classical wave theory, energy is transported through the amplitude of the wave, 
+	not through individual quanta. 
+	The Compton effect shows that light occurs in discrete energy packets \( h\nu \) — 
+	a clear indication of the particle nature of light.
+\end{DidacticBox}
+
+% -------------------------------------------------------------
+\subsection{Collision Between Photon and Electron}
+% -------------------------------------------------------------
+A photon strikes a stationary electron (mass \( m_e \)). 
+After the scattering event, the photon has a lower energy \( h\nu' \) 
+and is deflected by an angle \( \theta \). 
+The electron receives a recoil momentum \( \vec{p}_e \).
+
+\begin{PhysicsBox}[Scattering Geometry]
+	\small
+	The scattering geometry can be expressed vectorially as
+	\[
+	\vec{p}_\gamma = \vec{p}_{\gamma'} + \vec{p}_e.
+	\]
+	In components:
+	\[
+	p_\gamma = p_{\gamma'}\cos\theta + p_{e,x}, \qquad
+	0 = p_{\gamma'}\sin\theta - p_{e,y}.
+	\]
+\end{PhysicsBox}
+
+\begin{NoteBox}[Inelastic Collision]
+	Although energy and momentum are conserved, 
+	the collision is \emph{not elastic} in the classical sense, 
+	because part of the photon’s energy is converted into the electron’s kinetic energy.
+\end{NoteBox}
+
+% -------------------------------------------------------------
+\subsection{Energy and Momentum Conservation Combined}
+% -------------------------------------------------------------
+According to the law of energy conservation:
+\[
+h\nu + m_e c^2 = h\nu' + \sqrt{(p_e c)^2 + (m_e c^2)^2}.
+\]
+Combining this with the momentum relations 
+and performing a few algebraic transformations yields the well-known \emph{Compton formula}:
+\[
+\lambda' - \lambda = \frac{h}{m_e c}\,(1 - \cos\theta).
+\]
+
+\begin{MathBox}[The Compton Wavelength]
+	The quantity
+	\[
+	\lambda_C = \frac{h}{m_e c} \approx \SI{2.43e-12}{\meter}
+	\]
+	is called the \textbf{Compton wavelength} 
+	and characterizes the scale at which the effect becomes experimentally observable.
+\end{MathBox}
+
+% -------------------------------------------------------------
+\subsection{Physical Interpretation}
+% -------------------------------------------------------------
+The change in wavelength depends solely on the scattering angle \( \theta \) 
+and is maximal for backscattering (\( \theta = 180^\circ \)). 
+This confirms that photons transfer energy and momentum like particles, 
+even though they also propagate as waves.
+
+\begin{DidacticBox}[What the Compton Effect Reveals]
+	The Compton effect proves that light cannot be understood purely as a wave. 
+	It requires a description in terms of \emph{particles with energy and momentum} — 
+	the photons. This marked a decisive extension of classical electrodynamics.
+\end{DidacticBox}
+
